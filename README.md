@@ -59,7 +59,7 @@ Map Story offers a template for you to create your own AR location-based stories
 4. The user will then continue to visit the other locations in their local area, similarly placing and interacting with virtual objects. Map Story can either be setup to allow all the locations to be visited in the order that will minimise the overall walking distance, or allow the user to select the next location to visit from those identified on the map of their local area.
 5. After visiting the pre-selected number of locations, an ending or closing screen is provided before exiting the app.
 
-![Example gameplay](Images/Gameplay.jpg)
+![Example gameplay](Images/GamePlay.jpg)
 
 ## Sections of the story engine <a name="sections"></a>
 Each section of the Map Story engine is designed to be fully customisable according to your own story or game, including adding new sections between those included. The current parts of the existing engine are as folllows including how to set-up the Unity project when you first start:
