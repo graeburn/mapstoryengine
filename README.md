@@ -62,7 +62,7 @@ Map Story offers a template for you to create your own AR location-based stories
 ![Example gameplay](Images/GamePlay.jpg)
 
 ## Sections of the story engine <a name="sections"></a>
-Each section of the Map Story engine is designed to be fully customisable according to your own story or game, including adding new sections between those included. The current parts of the existing engine are as folllows including how to set-up the Unity project when you first start:
+Each section of the Map Story engine is designed to be fully customisable according to your own story or game, including adding new sections between those included. The current parts of the existing engine are as follows including how to set-up the Unity project when you first start:
 
 ### Before starting
 The Map Story Unity projects included for both iOS and Android were created in Unity 2019.2.11f1 so you will want to make sure you are running that or a newer version. You will also need to make sure you have the relevant packages installed that are required to run the project. These are as follows:
