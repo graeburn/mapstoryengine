@@ -2,7 +2,7 @@
 
 Map Story is an Augmented Reality location story/game engine available as a Unity project. Two versions of the project are available for download, each set up to  build for either iOS or Android mobile phones capable of supporting AR through the phone camera. This means iPhones (6S and later) and most non-lite models of Android handsets.
 
-The story engine allows you to quickly create a location-based experience for use anywhere, with the app detecting suitable nearby sites to visit and incorporate as desired. The app will continue automtatically on arriving at each real world location shown on a local map, asking the user to interact with virtual models overlaid on the surroundings using AR, before continueing on to the next site. The engine offers a template to personalise according to your own story or game, adding appropriate virtual models for each location visited, alongside scripts representing your desired interactions with them.
+The story engine allows you to quickly create a location-based experience for use anywhere, with the app detecting suitable nearby sites to visit and incorporate as desired. The app will continue automatically on arriving at each real world location shown on a local map, asking the user to interact with virtual models overlaid on the surroundings using AR, before continuing on to the next site. The engine offers a template to personalise according to your own story or game, adding appropriate virtual models for each location visited, alongside scripts representing your desired interactions with them.
 
 Each of the GameObjects is numbered to help you set up the project in the Inspector window, in case it is not correctly set up when opening the **MapStory** project scene that contains the app templates.
 
