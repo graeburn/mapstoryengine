@@ -19,7 +19,7 @@ Each of the GameObjects is numbered to help you set up the project in the Inspec
 ## Quick start guide <a name="quickstart"></a>
 Before opening the project make sure that you have the required plugins installed and are using a suitable version of Unity. These are outlined in [Before starting](#sections).
 Despite the Map Story engine just consisting of a series of blank templates for each page of the app, a finished app can be built and uploaded to a mobile phone quickly to demonstrate the app's features. The steps to achieve this are as follows:
-1. Load the appropropriate iOS or Android Unity project according to which device you want to use the app on.
+1. Load the appropriate iOS or Android Unity project according to which device you want to use the app on.
 2. Enter your personal Mapbox ID under Unity's Mapbox menu (*Mapbox -> Setup*). If you do not have an ID already you can sign up for one for free through [Mapbox](https://account.mapbox.com/auth/signup/).
 
 ![Mapbox ID entry](Images/MapboxID.jpg)
