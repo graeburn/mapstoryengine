@@ -17,10 +17,10 @@ Each of the GameObjects is numbered to help you set up the project in the Inspec
 8. [Contact](#contact)
 
 ## Quick start guide <a name="quickstart"></a>
-Before opening the project make sure that you have the required plugins installed and are using a suitable version of Unity. These are outlined in [Before starting](#sections).
+Before opening the project make sure that the required plugins were installed when you opened the project, and are using a suitable version of Unity. These are outlined in [Before starting](#sections).
 Despite the Map Story engine just consisting of a series of blank templates for each page of the app, a finished app can be built and uploaded to a mobile phone quickly to demonstrate the app's features. The steps to achieve this are as follows:
-1. Load the appropriate iOS or Android Unity project according to which device you want to use the app on.
-2. Enter your personal Mapbox ID under Unity's Mapbox menu (*Mapbox -> Setup*). If you do not have an ID already you can sign up for one for free through [Mapbox](https://account.mapbox.com/auth/signup/).
+1. Load the appropriate iOS or Android Unity project according to which device you want to use the app on and open the **MapStory** scene.
+2. Enter your personal Mapbox ID under Unity's Mapbox menu (*Mapbox -> Setup*). If you do not have an ID already you can sign up for a free account through [Mapbox](https://account.mapbox.com/auth/signup/).
 
 ![Mapbox ID entry](Images/MapboxID.jpg)
 
@@ -30,9 +30,9 @@ Despite the Map Story engine just consisting of a series of blank templates for 
 
 &nbsp; - The maximum play area specified as a radius in metres (a multiple of 50), around the user's starting location.
 
-&nbsp; - Your personal Google Places key to connect to the API and search for local Points Of Interest (POIs). 
+&nbsp; - Your personal Google Places key to connect to the Google Places API and search for local Points Of Interest (POIs). 
 
-If you do not have one already you can sign up at [Google Maps](https://developers.google.com/maps). Make sure that the Places API is added to your Google project associated with the key.
+If you do not have one already you can sign up for free account at [Google Maps](https://developers.google.com/maps). Be sure to check that the Places API is added/enabled on the Google project associated with the API key.
 
 ![Searching Local Sites](Images/SearchSites.jpg)
 
@@ -65,7 +65,7 @@ Map Story offers a template for you to create your own AR location-based stories
 Each section of the Map Story engine is designed to be fully customisable according to your own story or game, including adding new sections between those included. The current parts of the existing engine are as follows including how to set-up the Unity project when you first start:
 
 ### Before starting
-The Map Story Unity projects included for both iOS and Android were created in Unity 2019.2.11f1 so you will want to make sure you are running that or a newer version. You will also need to make sure you have the relevant packages installed that are required to run the project. These are as follows:
+The Map Story Unity projects included for both iOS and Android were created in Unity 2019.2.11f1 so you will want to make sure you are running that version, though newer versions may also work. Navigate to the **MapStory** scene when first opening the appropriate iOS or Android version of the project. You will also need to make sure the relevant packages were installed when you opened the Unity project, which should happen automatically. These are as follows:
 
 1. **ARFoundation** and **ARSubsystems** Version 3.1.3 &mdash; Allows the placement of virtual objects through Augmented Reality in the phone camera view, using SLAM tracking to align them to the physical surroundings.
 2. **ARKit XR Plugin** Version 3.0.4 &mdash; AR implementation primarily used for iOS devices.
@@ -73,11 +73,11 @@ The Map Story Unity projects included for both iOS and Android were created in U
 4. **XR Management** Version 3.0.6 &mdash; Manages XR plugin implementation.
 4. **Json.NET for Unity** Version 10.0.302 &mdash; Provides a JSON framework used to receive data from the Google Places API.
 
-Map Story is built using a modified version of the Mapbox for Unity SDK, which is included in the Unity projects. The Mapbox API is used for its map and navigation tools, so to build the app you will be required to enter a valid Mapbox ID. This is entered on the Mapbox setup menu added to the Unity menu by the SDK (*Mapbox -> Setup*).
+Map Story is built using a modified version of the Mapbox for Unity SDK, which is included in the Unity projects. The Mapbox API is used for its map and navigation tools, so to build the app you will be required to enter a valid Mapbox ID. This is entered on the Mapbox setup menu added to the Unity menu by the SDK (*Mapbox -> Setup*). If you do not have an ID already you can sign up for a free account through [Mapbox](https://account.mapbox.com/auth/signup/).
 
 ![Mapbox ID](Images/MapboxID.jpg)
 
-Your Mapbox ID can also be with the online [Mapbox studio](https://www.mapbox.com/mapbox-studio) software to create a customised map that best suits the theme of your story or game. After designing the look of your map using the software and your public Mapbox ID, you will be provided with a Style URL that can be entered on the *Abstract Map* script of the **ARAlignedMap** GameObject, under the Image section. This will add this map styling to your Map Story project.
+Your public Mapbox ID can also be with the online [Mapbox studio](https://www.mapbox.com/mapbox-studio) software to create a customised map that best suits the theme of your story or game. After designing the look of your map using the software and your public Mapbox ID, you will be provided with a Style URL that can be entered on the *Abstract Map* script of the **ARAlignedMap** GameObject, under the Image section. This will add this map styling to your Map Story project.
 
 ![Adding a custom map style](Images/CustomMap.jpg)
 
@@ -86,13 +86,13 @@ The **TitlePanel_1** GameObject contains a blank template to create a title page
 
 ![Title Page](Images/Title.jpg)
 
-The POIs are identified through the Google Places API, this search handled by the **SearchLocalSites_12** GameObject and its associated *SearchLocationsScript*. When creating your own experience you will need to set three values on this script in the Inspector. The first entry determines the number of real world locations that the user will be required to visit. The Places API must therefore detect at least this many local sites, those selected according to their prominence rating. This search will be performed in a selected radius around the GPS position where the user selects to load the app. To perform this search using the API you will need a valid Google Places API key.
+The POIs are identified through the Google Places API, this search handled by the **SearchLocalSites_12** GameObject and its associated *SearchLocationsScript*. When creating your own experience you will need to set three values on this script in the Inspector. The first entry determines the number of real world locations that the user will be required to visit. The Places API must therefore detect at least this many local sites, those selected according to their prominence rating. This search will be performed in a selected radius around the GPS position where the user selects to load the app. To perform this search using the API you will need a valid Google Places API key. If you do not have one already you can sign up for free account at [Google Maps](https://developers.google.com/maps). Be sure to check that the Places API is added/enabled on the Google project associated with the API key.
 
 Variables to set:
 - *No Locations To Visit* &mdash; The number of real world locations to visit as part of your project.
 - *Search Radius* &mdash; The radius of the search area in metres to look for local sites. The number should be a multiple of 50.
 - *API Key* &mdash; Your Google Places API key must be entered in order to connect to the API and search for suitable map sites.
-- 
+
 ![Search Locations Object](Images/SearchSites.jpg)
 
 ### Instructions page
