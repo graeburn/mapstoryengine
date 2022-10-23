@@ -30,6 +30,7 @@ public class SearchLocationsScript : MonoBehaviour
 	[Tooltip("Enter your Google API key")]
     public string API_KEY = "";
 
+
     // Google API Nearby Places url
     private string Places_url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json";
 
