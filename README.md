@@ -19,7 +19,7 @@ Each of the GameObjects is numbered to help you set up the project in the Inspec
 ## Quick start guide <a name="quickstart"></a>
 Before opening the project make sure that the required plugins were installed when you opened the project, and are using a suitable version of Unity. These are outlined in [Before starting](#sections).
 Despite the Map Story engine just consisting of a series of blank templates for each page of the app, a finished app can be built and uploaded to a mobile phone quickly to demonstrate the app's features. The steps to achieve this are as follows:
-1. Load the appropriate iOS or Android Unity project according to which device you want to use the app on and open the **MapStory** scene.
+1. Load the appropriate iOS or Android Unity project according to which device you want to use the app on and open the **MapStory** scene (Located under *Assets -> StoryEngine -> Scenes*).
 2. Enter your personal Mapbox ID under Unity's Mapbox menu (*Mapbox -> Setup*). If you do not have an ID already you can sign up for a free account through [Mapbox](https://account.mapbox.com/auth/signup/).
 
 ![Mapbox ID entry](Images/MapboxID.jpg)
@@ -65,7 +65,7 @@ Map Story offers a template for you to create your own AR location-based stories
 Each section of the Map Story engine is designed to be fully customisable according to your own story or game, including adding new sections between those included. The current parts of the existing engine are as follows including how to set-up the Unity project when you first start:
 
 ### Before starting
-The Map Story Unity projects included for both iOS and Android were created in Unity 2019.2.11f1 so you will want to make sure you are running that version, though newer versions may also work. Navigate to the **MapStory** scene when first opening the appropriate iOS or Android version of the project. You will also need to make sure the relevant packages were installed when you opened the Unity project, which should happen automatically. These are as follows:
+The Map Story Unity projects included for both iOS and Android were created in Unity 2019.2.11f1 so you will want to make sure you are running that or a later version. For late 2020, and 2021 versions of Unity, you will be required to remove the **VersionControl** package located at *Window -> Package Manager*, to prevent the project running without errors. Navigate to the **MapStory** scene when first opening the appropriate iOS or Android version of the project (Located under *Assets -> StoryEngine -> Scenes*). You will also need to make sure the relevant packages were installed when you opened the Unity project, which should happen automatically. These are as follows:
 
 1. **ARFoundation** and **ARSubsystems** Version 3.1.3 &mdash; Allows the placement of virtual objects through Augmented Reality in the phone camera view, using SLAM tracking to align them to the physical surroundings.
 2. **ARKit XR Plugin** Version 3.0.4 &mdash; AR implementation primarily used for iOS devices.
