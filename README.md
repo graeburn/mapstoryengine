@@ -1,9 +1,5 @@
 # Map Story - An AR location-based story/game engine for Unity
 
-## November 2022 workshop
-Please complete the ethics form at the following link [HERE](https://forms.gle/p2Kux3hyCsKxNQLP9).
-
-## Background
 Map Story is an Augmented Reality location story/game engine available as a Unity project. Two versions of the project are available for download, each set up to  build for either iOS or Android mobile phones capable of supporting AR through the phone camera. This means iPhones (6S and later) and most non-lite models of Android handsets.
 
 The story engine allows you to quickly create a location-based experience for use anywhere, with the app detecting suitable nearby sites to visit and incorporate as desired. The app will continue automatically on arriving at each real world location shown on a local map, asking the user to interact with virtual models overlaid on the surroundings using AR, before continuing on to the next site. The engine offers a template to personalise according to your own story or game, adding appropriate virtual models for each location visited, alongside scripts representing your desired interactions with them.
